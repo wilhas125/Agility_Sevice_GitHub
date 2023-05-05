@@ -6,7 +6,7 @@ export default function TelaInicio() {
 
             <Text style={styles.titulo}>AGILITY SERVICE</Text>
             <Text style={styles.SubTitulo}>Seu agilizador de serviços</Text>
-            <Text style={styles.SubTitulo}>Seu agilizador de serviços</Text>
+
 
 
 
