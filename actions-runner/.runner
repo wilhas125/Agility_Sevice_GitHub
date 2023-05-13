@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 22,
+  "agentName": "WILHAS-SYSTEM-J",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/ZRiBEleJ6CwRHXw0bEOnBzrscqxqgIh9q0d3bHVYurN0WhpWI6",
+  "gitHubUrl": "https://github.com/wilhas125/Agility_Sevice_GitHub",
+  "workFolder": "_work"
+}
