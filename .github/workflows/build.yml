@@ -8,16 +8,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          repository: wilhas125/Agility_Sevice_GitHub
-          ref: main
-      - name: Build app
-        run: |
-          npm install
-          npm run build
+
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
