@@ -14,8 +14,7 @@ jobs:
 
       - name: Run CodeScan
         run: |
-          # Coloque aqui o comando Start-CodeScan para executar a análise de código
-          # Certifique-se de que o arquivo "report.pdf" seja gerado corretamente
+          Start-CodeScan
 
       - name: Syhunt Report
         uses: actions/upload-artifact@v2
