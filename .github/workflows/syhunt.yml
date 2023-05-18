@@ -14,5 +14,4 @@ jobs:
         if: failure()
         with:
          name: syhunt-report
-         path: report.pdf
-         if-no-files-found: error
+
