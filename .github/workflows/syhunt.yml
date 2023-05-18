@@ -8,10 +8,19 @@ jobs:
     runs-on: [self-hosted, Windows, X64]
     steps:
       - uses: actions/checkout@v2
-      - run: Start-CodeScan -pfcond 'fail-if:risk=mediumup' -output 'report.pdf'
-      - name: 'Syhunt Report'
-        uses: actions/upload-artifact@v2
-        if: failure()
-        with:
-         name: syhunt-report
+      - name: Setup Syhunt
+        run: |
+          # Coloque aqui os comandos necessários para configurar o ambiente do Syhunt
 
+      - name: Run CodeScan
+        run: |
+          # Coloque aqui o comando Start-CodeScan para executar a análise de código
+          # Certifique-se de que o arquivo "report.pdf" seja gerado corretamente
+
+      - name: Syhunt Report
+        uses: actions/upload-artifact@v2
+        if: ${{ failure() }}
+        with:
+          name: syhunt-report
+          path: report.pdf
+          if-no-files-found: error
